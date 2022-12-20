@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projects</title>
+        <link rel="icon" href="https://rudolphdesanti.com/images/favicon.png">
+        <link rel="stylesheet" href="https://rudolphdesanti.com/resumeSite.css">
+    </head>
+
+    <body id = 'body-resume'>
+        <div class = "header-full">
+            <div class  = "upper-header">
+                <div class = 'corner-logo'>
+                    <div class = 'center-row'>
+                        <img src = "https://rudolphdesanti.com/images/favicon-header.png" height = "30" width="30">
+                        <h5>RudolphDeSanti.com</h5>
+                    </div>
+                </div>
+                <div class = 'header-title'>
+                    <h1>Projects</h1>
+                </div>
+                
+            </div>
+            <div class = 'header'>
+                <div id = 'header-bar'>
+                    <a href = 'https://rudolphdesanti.com/home.html'>About Me</a>
+                    <a href = "https://rudolphdesanti.com/resume.html">Resume</a>
+                    <a class  = 'current-tab' href = '#'>Projects</a>
+                </div>
+            </div>
+        </div>
+
+        <div class = 'resume-project'>
+            
+            <div class = 'resume-section' id = 'drive'>
+                
+
+                <div class = 'list-items'>
+                    <h2>DRIVE: Directed Remote Interactive Viewing and Exploring</h2>
+                    <h4>Android video chat app for giving and recieving virtual tours</h4>
+                    <div class = 'list-items'>
+                        <p>School Project for RWU</p>
+                        <p>September 2021 - May 2022</p>
+                        <p>DRIVE is a video-chat Android application designed specifically for giving and receiving virtual tours. The client for this project was Dr. Sonya Cates, a professor of computer science at RWU. Close corporation was required between the development team and the client for the development of DRIVE.</p>
+                        <p>I was responsible for both the front and backend of this project. This includes user interface design, server-side design, and NoSQL database design.</p>
+                        <p><b>Skills Involved:</b> Javascript, React-Native, Google Firebase, NoSQL, Socket.IO, NodeJS</p>
+                    
+
+                            
+                        
+                        
+                         <!--
+                        <h5>Screenshots of Project:</h5>
+
+                       
+                        <div id = 'drive-images'>
+                            <div class ='photo-caption'>
+                                <img class = 'drive-img' src="https://rudolphdesanti.com/images/drive-home-screen.png" alt = "Home Screen" height="320" width="180">
+                                <p class = 'caption'>Home Screen</p>
+                            </div>
+                            <div class ='photo-caption'>
+                                <img class = 'drive-img' src="https://rudolphdesanti.com/images/drive-sign-up.png" alt = "Sign Up Screen" height="320" width="180">
+                                <p class = 'caption'>Sign-Up Screen</p>
+                            </div>
+                            <div class ='photo-caption'>
+                                <img class = 'drive-img' src="https://rudolphdesanti.com/images/drive-contacts.png" alt = "Contacts Screen" height="320" width="180">
+                                <p class = 'caption'>Contacts Screen</p>
+                            </div>
+                            <div class ='photo-caption'>
+                                <img class = 'drive-img' src="https://rudolphdesanti.com/images/drive-viewer.png" alt = "Viewer (Tourist) Screen" height="320" width="180">
+                                <p class = 'caption'>Viewer (Tourist) Screen</p>
+                            </div>
+                            <div class ='photo-caption'>
+                                <img class = 'drive-img' src="https://rudolphdesanti.com/images/drive-tour-guide.png" alt = "Broadcaster (Tour Guide) Screen" height="320" width="180">
+                                <p class = 'caption'>Broadcaster (Tour Guide) Screen</p>
+                            </div>
+                        </div>
+                        <div class ='photo-caption'>
+                            <img id = 'drive-poster' src="https://rudolphdesanti.com/images/drive-poster.png" alt = "Drive Poster" height="350" width="450">
+                            <p class = 'caption'>Advertisment for DRIVE</p>
+                        </div>
+                        -->
+                    </div>
+                </div>
+                <div class = 'centered-div'>
+                    <div class = "column-center" id = "drive-ss-container">
+                        <h4>Screenshots of DRIVE</h4>
+                        <div class = "picture-slide">
+                            <button class = 'slide-button' id = "left-button" onclick="moveBack(driveSSQueue, currentIndexList[0], 0, driveSSCurrentImg, driveSSCaptions, driveSSCurrentCaption, driveSSCPrevImg, driveSSCNextImg)"><img class = 'arrow-button' src = "https://rudolphdesanti.com/images/left-arrow.png"></button>
+
+                            <img class = 'img-thumbnail' id = "prev-drive-img" src = "https://rudolphdesanti.com/images/drive-settings.png">
+                            <div class = "photo-caption-slide">
+                                <img id = "current-drive-img" src = "https://rudolphdesanti.com/images/drive-home-screen.png" height = "470px" width = "230px">
+                                <p class = 'caption' id = "active-caption">Home Screen</p>
+                            </div>
+                            <img class = 'img-thumbnail' id = "next-drive-img" src = "https://rudolphdesanti.com/images/drive-sign-up.png">
+
+                            <button class = 'slide-button' id = "right-button" onclick="moveForward(driveSSQueue, currentIndexList[0], 0, driveSSCurrentImg, driveSSCaptions, driveSSCurrentCaption, driveSSCPrevImg, driveSSCNextImg)"><img class = 'arrow-button' src = "https://rudolphdesanti.com/images/right-arrow.png"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class ='divider'></div>
+            
+            <div class = 'resume-section' id = 'portfolio-website'>
+                
+
+                <div class = 'list-items'>
+                    <h2>Portfoilio Website<i> (This Website) </i></h2>
+                    <h4>A static website dispalying my resume, skills, school/work projects, and my contact information.</h4>
+                    <div class = 'list-items'>
+                    <p>Personal Project</p>
+                    <p>November 2022</p>
+                    <p>This static website was written in pure HTML and CSS, with no framework. The website files are stored in an publicly accessable AWS S3 bucket. AWS CloudFront is used to cache the website files and quickly serve them with low latency. The website uses the HTTPS protocol.</p>
+                    <p>The "Send me a message" section on the home page uses AWS SES to send emails to me at rudolphdesanti@gmail.com. Through an HTML API made with AWS API Gateway, data os transfered to an AWS Lambda serverless function, where AWS SES is used to send the emails.</p>
+                    <p><b>Skills Involved:</b> HTML, CSS, Javascript, AWS CloudFront, AWS Simple Storage Service (S3), AWS Lambda, AWS Simple Email Service (SES), AWS API Gateway, AWS IAM policies & roles</p>
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <div class = 'footer-space'></div>
+        <div id = 'footer'>
+            <p>Contact me: </p>
+            <a href = 'mailto:rudolphdesanti@gmail.com'><img class = 'footer-logo' src = "https://rudolphdesanti.com/images/google.png" alt = "Gmail Logo"></a>
+            <!--<a href = 'tel:+6317025496'><img class = 'footer-logo' src = "https://rudolphdesanti.com/images/phone.png" alt = "Phone Logo"></a>-->
+            <a href = 'https://www.linkedin.com/in/rudy-desanti-iii/'><img class = 'footer-logo' src = "https://rudolphdesanti.com/images/linkedin.png" alt = "LinkedIn Logo"></a>
+       </div>
+
+       <script src="https://rudolphdesanti.com/js/pictureSlide.js"></script>
+    </body>
+</html>
