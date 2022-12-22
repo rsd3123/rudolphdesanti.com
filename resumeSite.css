@@ -709,13 +709,15 @@
   
   #profile-pic{
     display: inline;
-    margin-left: auto;
+    margin-left: 20px;
     margin-right: 10px;
     width: 20%;
     height: 20%;
-    border:none;
+    border:solid 6px #e4e4e4;;
+    
    
-  
+    margin-top:auto;
+    margin-bottom:auto;
     margin-right:0;   
   }
   
@@ -1132,8 +1134,10 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    margin-bottom: 20px;
   }
 
+  /*
   #profile-vert-divider{
     margin-left:0;
       
@@ -1143,6 +1147,7 @@
     margin-top:0;
 
   }
+  */
 
   .resume-resume{
     padding: 14px 16px;
@@ -1155,6 +1160,10 @@
     padding: 14px 16px;
     color:#333;
     margin-top:0;
+  }
+
+  .caption{
+    font-family: 'Roboto', sans-serif;
   }
 }
 
