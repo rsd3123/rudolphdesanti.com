@@ -140,6 +140,8 @@
   
   .header-full{
     background-color: #333;
+    
+ 
   }
   
   .upper-header{
@@ -470,6 +472,8 @@
     width: 100%;
     height:100%;
     margin:0;
+
+    
   }
   
   #split-divider{
@@ -590,7 +594,7 @@
   }
   
   body{
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     
     min-width:100vh;
     min-height:100vh;
@@ -612,8 +616,8 @@
     color: #333;
     background-color: #f2f2f2;   
     text-align: center; 
-    text-decoration: underline;
-    font-size: 40px;
+    text-decoration: none;
+    font-size: 38px;
   }  
   
   a{
@@ -627,28 +631,29 @@
   
   .divider{
     min-width: fit-content;
-    min-height: 1px;
-    background-color: #333;
+    min-height: 2px;
+    background-color: rgb(185, 185, 185);
     margin-top: 20px;
     margin-bottom: 20px;  
   }
   
   .divider-vertical{
     
-    min-width: 1px;
-    background-color: #333;
+    min-width: 2px;
+    background-color:  rgb(185, 185, 185);
     margin-right: 20px;
     margin-left: 20px;
   }
   
   .header-full{
     background-color: #f2f2f2;
-    
-    margin-bottom:0;
+    padding-bottom: 10px;
+    padding-top:10px;
+    margin-bottom:0px;
   }
   
   .upper-header{
-    display: grid;
+    display: none; /*grid*/
     grid-template-columns: 1fr repeat(3, auto) 1fr;
     grid-column-gap: 5px;
     justify-items:flex-start;
@@ -685,7 +690,7 @@
     padding-top:0px;
     display: flex;
     justify-content: space-evenly;
-    border-bottom:0px solid rgb(145,145,145);
+    
     margin-bottom: 0px;
   }
    
@@ -828,7 +833,7 @@
   }
   
   .contact-info:hover{
-    background-color: #ffffff;
+    background-color: #fafafa;
   }
   
   .footer-space{
@@ -894,8 +899,9 @@
     width: 50%;
     height: 60%;
     margin:10px 10px;
-    padding: 5px 5px;
-    background-color: #e4e4e4;
+    
+    background-color: #fafafa;
+    border:solid 1px #333;
   }
   
   .split-section{
@@ -904,7 +910,7 @@
     justify-content: space-evenly;
     width: 100%;
     margin:0;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
   
   .contact-me{
@@ -913,13 +919,18 @@
   }
   
   .form{
-    padding-left: 10px;
+    padding: 20px;
+    background-color: #fafafa;
+    border: solid 2px #333;
+    margin-bottom: 30px;
   }
+
   .field{
     display:flex;
     flex-direction: column;
     justify-content: center;
     width:100%;
+    padding-bottom:10px;
   }
   
   .field p {
@@ -928,6 +939,7 @@
     font-weight:bold;
     font-size: 1.1em;
     margin-left: 0;
+    margin-top: 0;
   }
   
   .field textarea{
@@ -977,7 +989,7 @@
     position:absolute;
     min-width:100%;
     margin:0;
-    margin-top:90px;
+    margin-top:50px;
     margin-bottom: 0;
     display:flex;
     justify-content: center;
@@ -1126,6 +1138,7 @@
 
   #award-video{
     margin-bottom:0;
+    border: none;
   }
 
   #about-me-text{
@@ -1180,8 +1193,11 @@
     font-family: 'Roboto', sans-serif;
   }
 
-  textarea{
-    background-color: #333;
+  
+  
+  #header-divider{
+    background-color: #ffffff;
+    margin-top: 0;
   }
 }
 
