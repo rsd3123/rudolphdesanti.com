@@ -35,16 +35,41 @@ function send_message(){
       
       var xhttp = new XMLHttpRequest();
 
-      xhttp.open("POST","https://rm8e4u2px1.execute-api.us-east-1.amazonaws.com/default/rudolphdesantiSendEmail",true);
-      xhttp.onreadystatechange = function(){
-        if(this.readyState == 4 && this.status == 200){
-          console.log("Mesasge sent successfully.")
-          alert("Message Sent!");
-        }
-      }
+      
+      //Catch any errors
+      try{
 
-      xhttp.send(data);
-      }   
+        //Create and send request
+        xhttp.open("POST","https://rm8e4u2px1.execute-api.us-east-1.amazonaws.com/default/rudolphdesantiSendEmail",true);
+        xhttp.send(data);
+
+        sendBtn.innerHTML = "Sending...";
+
+        //On 
+        xhttp.onload= function(){
+
+          if(this.readyState == 4 && this.status == 200){
+            console.log("Mesasge sent successfully.")
+
+            sendBtn.innerHTML = "Send Message";
+            fullName.value = "";
+            email.value = "";
+            message.value = "";
+
+            alert("Message Sent!");
+          }
+
+        }
+        xhttp.onerror = function(){
+          alert("Error sending message.");
+          sendBtn.innerHTML = "Send Message";
+        }
+        
+      } catch(e){
+        alert("Error sending message.");
+        sendBtn.innerHTML = "Send Message";
+      }
+    }   
       
 
     else if(currentFullName == "" && currentEmail == ""){
