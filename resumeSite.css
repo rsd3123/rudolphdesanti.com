@@ -632,6 +632,17 @@
     padding: 0;
   }
   
+  .cert-div{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cert-div-vert{
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+  }
+
   .divider{
     min-width: fit-content;
     min-height: 2px;
