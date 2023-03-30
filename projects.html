@@ -66,6 +66,24 @@
 
             <div class ='divider'></div>
             
+            <div class = 'resume-section' id = 'equle-game'>
+                
+
+                <div class = 'list-items'>
+                    <h2>Equle Math Game</h2>
+                    <h4>A web-based Worlde-like game where instead of guessing words, the player guesses math equations. <a href = "equle.rudolphdesanti.com">equle.rudolphdesanti.com</a></h4>
+                    <div class = 'list-items'>
+                    <p>Personal Project</p>
+                    <p>March 2023</p>
+                    <p>Equle is a web-based application. The frontend for this game was built using the ReactJS framework. The HTML, CSS, and JS files are stored in an AWS S3 bucket, and cached on CloudFront CDNs for low-latency delivery to users.</p>
+                    <p>Posting high-scores to the leaderboard and recieving information from the leaderboard uses AWS Lambda and an AWS RDS database. The Lambda function and RDS are placed in the same VPC, with the Lambda function being public facing. The Lambda function is triggered off of API calls from the frontend. The lambda function performs the correct SQL query, and return the information to the user to be displayed on the front end.</p>
+                    <p><b>Skills Involved:</b> ReactJS, HTML, CSS, Javascript, MySQL, AWS CloudFront, AWS Simple Storage Service (S3), AWS Lambda, AWS RDS, AWS API Gateway, AWS IAM policies & roles</p>
+                    </div>    
+                </div>
+            </div>
+
+            <div class ='divider'></div>
+
             <div class = 'resume-section' id = 'portfolio-website'>
                 
 
@@ -75,7 +93,7 @@
                     <div class = 'list-items'>
                     <p>Personal Project</p>
                     <p>November 2022</p>
-                    <p>This static website was written in pure HTML and CSS, with no framework. The website files are stored in an publicly accessable AWS S3 bucket. AWS CloudFront is used to cache the website files and quickly serve them with low latency. The website uses the HTTPS protocol.</p>
+                    <p>This static website was written in pure HTML and CSS, with no framework. The website files are stored in an publicly accessible AWS S3 bucket. AWS CloudFront is used to cache the website files and quickly serve them with low latency. The website uses the HTTPS protocol.</p>
                     <p>The "Send me a message" section on the home page uses AWS SES to send emails to me at rudolphdesanti@gmail.com. Through an HTML API made with AWS API Gateway, data os transfered to an AWS Lambda serverless function, where AWS SES is used to send the emails.</p>
                     <p><b>Skills Involved:</b> HTML, CSS, Javascript, AWS CloudFront, AWS Simple Storage Service (S3), AWS Lambda, AWS Simple Email Service (SES), AWS API Gateway, AWS IAM policies & roles</p>
                     </div>    
