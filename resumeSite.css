@@ -662,10 +662,12 @@
   }
   
   .header-full{
-    background-color: #f2f2f2;
+    background-color: #333;
     padding-bottom: 10px;
     padding-top:10px;
     margin-bottom:0px;
+
+    border-bottom:12px solid #ddd;
   }
   
   .upper-header{
@@ -708,12 +710,14 @@
     justify-content: space-evenly;
     
     margin-bottom: 0px;
+
+    
   }
    
   .header a {
     float: left;
     /*color: #f2f2f2;*/
-    color:#333;
+    color:#f2f2f2;
     text-align: center;
     padding: 14px 46px;
     
@@ -725,13 +729,13 @@
   }
     
   .header a:hover {
-    background-color: #333;
-    color: #f2f2f2;
+    background-color: #ddd;
+    color: #333;
   }
   
   .header a.current-tab {
-    background-color: #333;
-    color: #f2f2f2;
+    background-color: #ddd;
+    color: #333;
   }
   
   #profile-pic{
@@ -1020,7 +1024,7 @@
     font-weight: bold;
     font-size: 1.1em;
   
-    border-top:0px solid rgb(145, 145, 145); 
+    border-top:12px solid #ddd; 
   }
   
   .footer-logo{
