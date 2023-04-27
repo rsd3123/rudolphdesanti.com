@@ -111,7 +111,7 @@
   }  
   
   a{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
   }
   
   h5{
@@ -226,7 +226,7 @@
   
   .summary-text{
     display: inline-block;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     margin:10px 10px;
   }
   
@@ -277,7 +277,7 @@
   
   .resume p{
     font-size: 32px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
   }
   
   .resume h2{
@@ -314,7 +314,7 @@
     flex-direction: column;
     margin:0;
     padding-left: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     font-weight: 500;
    
   }
@@ -328,7 +328,7 @@
   }
 
   .resume-section h4{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     margin-bottom: 0;
   }
 
@@ -508,7 +508,7 @@
   
   .field p {
     margin-bottom: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     
     font-size: 30px;
   }
@@ -517,7 +517,7 @@
     margin-top:5px;
     resize: none;
     font-size: 30px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     text-align:start;
     padding: 10px;
   
@@ -533,7 +533,7 @@
     background-color: #f2f2f2;
     color:#333;
     font-size:1.3em;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     border:2px solid #333;  
   }
   
@@ -590,6 +590,7 @@
   #split-divider{
     display: none;
   }
+  
   html{
     min-height:100vh;
     min-width: 100vh;
@@ -625,7 +626,7 @@
   }  
   
   a{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
   }
   
   h5{
@@ -636,9 +637,9 @@
   .divider{
     min-width: fit-content;
     min-height: 2px;
-    background-color: rgb(185, 185, 185);
-    margin-top: 20px;
-    margin-bottom: 20px;  
+    background-color: #ddd;
+    padding-top: 5px;
+    padding-bottom: 5px;  
   }
   
   .divider-vertical{
@@ -738,7 +739,7 @@
   
   .summary-text{
     display: inline-block;
-    font-family: 'Roboto', sans-serif;
+    font-family:'Courier New', Courier, monospace;
     margin:10px 10px;
   }
   
@@ -786,7 +787,7 @@
     margin-left:40px;
   }
   .resume{
-    padding: 14px 16px;
+    padding: 14px 0px;
     padding-top:0px;
     color:#333;
     margin-top:0;
@@ -811,6 +812,8 @@
     /*align-items:center;*/
     justify-content: space-evenly;
     width:100%;
+
+    padding-bottom:15px;
     
   }  
   
@@ -891,8 +894,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin:0;
-    padding: 0;
+    margin:0px 0;
+    padding:20px 0;
+
+    background-color: #333;
+
+    color:#ddd;
   }
   
   .video h2{
@@ -915,6 +922,7 @@
     width: 100%;
     margin:0;
     margin-bottom: 60px;
+    padding-top:15px;
   }
   
   .contact-me{
@@ -939,7 +947,7 @@
   
   .field p {
     margin-bottom: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     font-weight:bold;
     font-size: 1.1em;
     margin-left: 0;
@@ -950,7 +958,7 @@
     margin-top:5px;
     resize: none;
     font-size: 1.1em;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     text-align:start;
     padding: 10px;
   
@@ -966,7 +974,7 @@
     background-color: #ffffff;
     color:#333;
     font-size:1.25em;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     border:2px solid #333;  
   }
 
@@ -1199,7 +1207,7 @@
   }
 
   .caption{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
   }
 
   
@@ -1210,7 +1218,7 @@
   }
 
   .list-items p,h4{
-    font-family: "Roboto", sans-serif;
+    font-family: 'Courier New', Courier, monospace;
   }
 }
 
