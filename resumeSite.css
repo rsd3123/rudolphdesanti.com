@@ -702,19 +702,22 @@
     margin-right:5px;
     display: none;
   }
+
   .header {
     /*background-color: #333;*/
     overflow: hidden;
     padding-top:0px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
     
     margin-bottom: 0px;
+    
 
     
   }
    
-  .header a {
+  #header-bar a {
     float: left;
     /*color: #f2f2f2;*/
     color:#f2f2f2;
@@ -728,14 +731,61 @@
     font-family: 'Courier New', Courier, monospace;
   }
     
-  .header a:hover {
+  #header-bar a:hover {
+  
+    animation: OnHoverHeader .75s ease-in-out forwards;
+  }
+
+  @keyframes OnHoverHeader {
+    from {
+      background-color: #333;
+      color:#ddd;
+      transform:scaleX(1);
+    }
+    
+    to {
+      background-color: #ddd;
+      color:#333;
+      transform:scaleX(1.1);
+    }
+  }
+
+  
+  #header-bar a.current-tab {
     background-color: #ddd;
     color: #333;
   }
-  
-  .header a.current-tab {
-    background-color: #ddd;
-    color: #333;
+
+  .social-links-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+  }
+
+  .social-links-header img{
+    border-style: none;
+    height:50px;
+    width:50px;
+    margin-right: 20px;
+    padding: 5px 5px;
+  }
+
+  .social-links-header img:hover{
+    animation: OnHoverSM .75s ease-in-out forwards;
+  }
+
+  @keyframes OnHoverSM {
+    from {
+      background-color: #333;
+      transform:scaleX(1);
+    }
+    
+    to {
+      background-color: #ddd;
+      transform:scaleX(1.1);
+      
+    }
   }
   
   #profile-pic{
@@ -774,7 +824,7 @@
   }
 
   #personal-info h2{
-    padding-left: 20px;
+    padding-left: 10px;
   }
   
   .list{
@@ -813,7 +863,7 @@
   }
   
   .resume h2{
-    text-decoration: underline;
+    
     font-size:30px;
     }
   
@@ -852,10 +902,26 @@
     margin-right: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
+
   }
   
   .contact-info:hover{
-    background-color: #fafafa;
+    animation: OnHover 2s ease-in-out forwards;
+  }
+
+  @keyframes OnHover {
+    from {
+      background-color: #f2f2f2;
+      color:#333;
+      transform: scaleX(1);
+    }
+    
+    to {
+      background-color: #333;
+      color:#f2f2f2;
+      
+      transform: scaleX(1.1);
+    }
   }
   
   .footer-space{
@@ -1015,6 +1081,7 @@
     bottom:0;
     position:absolute;
     min-width:100%;
+    min-height: 2%;
     margin:0;
     margin-top:50px;
     margin-bottom: 0;
@@ -1041,7 +1108,7 @@
     width:30px;
     padding:5px 5px;
     margin: 5px 5px;
-    background-color: rgb(145, 145, 145);
+    background-color: #ddd;
   }
 
   .project-section {
@@ -1234,6 +1301,49 @@
 
   .list-items p,h4{
     font-family: 'Courier New', Courier, monospace;
+  }
+
+  .subtitle-black{
+    text-decoration: none;
+    background-color: #f2f2f2;
+    animation: FadeInBlack 1s ease-in forwards;
+    color: #f2f2f2;
+    width: fit-content;
+    padding: 2px 10px;
+  }
+
+  .subtitle-white{
+    text-decoration: none;
+    background-color: #333;
+    color: #333;
+    width: fit-content;
+    padding: 2px 10px;
+    animation: FadeInWhite 2s ease-in forwards;
+  }
+
+  @keyframes FadeInBlack {
+    from {
+      background-color: #f2f2f2;
+    }
+    
+    to {
+      background-color: #333;
+    }
+  }
+
+  @keyframes FadeInWhite {
+    from {
+      background-color: #333;
+    }
+    
+    to {
+      background-color: #f2f2f2;
+    }
+  }
+
+  .hidden{
+    color:#333;
+    visibility: hidden;
   }
 }
 
