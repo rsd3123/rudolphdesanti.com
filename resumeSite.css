@@ -1292,7 +1292,11 @@
     font-family: 'Courier New', Courier, monospace;
   }
 
-  
+  .b2w{
+    color:#333;
+    background-color: #ddd;
+    padding: 0 5px;
+  }
   
   #header-divider{
     background-color: #ffffff;
